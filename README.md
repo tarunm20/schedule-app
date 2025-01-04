@@ -24,3 +24,8 @@ FEATURES:
 - repeating schedule
 - get and create new tests
 - change week view based on week
+
+Next Steps:
+- User based views, need to update DB schema for that too
+- updating scheduled tests
+- recommended tests and schedules for them
