@@ -164,6 +164,19 @@ const WeeklyCalendar = () => {
         </div>
       </TabsContent>
 
+      <TabsContent value="list">
+        <div className="p-4">
+          <h2 className="text-lg font-bold mb-4">List View</h2>
+          <ul>
+            {schedules.map((schedule, index) => (
+              <li key={index} className="p-2 border-b">
+                {schedule.title} - {format(schedule.start_time, 'MM/dd/yy')} {schedule.start_time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} ({schedule.repeat_days.join(', ')})
+              </li>
+            ))}
+          </ul>
+        </div>
+      </TabsContent>
+
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent>
           <DialogHeader>
