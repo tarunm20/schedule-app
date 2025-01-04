@@ -115,10 +115,10 @@ const WeeklyCalendar = () => {
         </div>
         <TabsList className="flex gap-2">
           <TabsTrigger value="list" className="flex items-center gap-2">
-            <List size={16} /> List View
+            <List size={16} />
           </TabsTrigger>
           <TabsTrigger value="calendar" className="flex items-center gap-2">
-            <Calendar size={16} /> Calendar View
+            <Calendar size={16} />
           </TabsTrigger>
         </TabsList>
       </div>
